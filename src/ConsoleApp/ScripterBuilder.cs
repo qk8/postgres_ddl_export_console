@@ -2,6 +2,7 @@
 using DdlExporter.Common.Configuration;
 using DdlExporter.Common.Loggers;
 using DdlExporter.Common.Writers;
+using DdlExporter.Postgresql;
 using DdlExporter.Mssql;
 using System;
 
@@ -59,6 +60,8 @@ namespace mssql_ddl_export_console
             {
                 case MssqlScripter.DATABASE_TYPE:
                     return new MssqlScripter(this.configurationReader, writer, logger);
+                case PostgresqlScripter.DATABASE_TYPE:
+                    return new PostgresqlScripter(this.configurationReader, writer, logger);
             }
             throw new NotImplementedException();
         }

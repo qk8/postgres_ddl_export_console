@@ -1,4 +1,4 @@
-﻿using DdlExporter.Common.Loggers;
+using DdlExporter.Common.Loggers;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -45,7 +45,8 @@ namespace DdlExporter.Common.Writers
 
             if (Options.ObjectsInSeparateFile)
             {
-                path = Path.Combine(path, $"{objectName}.sql");
+                var safeObjectName = string.Join("_", objectName.Split(Path.GetInvalidFileNameChars()));
+                path = Path.Combine(path, $"{safeObjectName}.sql");
             }
             else
             {

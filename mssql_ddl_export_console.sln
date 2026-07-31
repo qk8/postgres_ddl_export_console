@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "jobs", "jobs", "{7FD602C7-C
 		jobs\sync_testdb.bat = jobs\sync_testdb.bat
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DdlExporter.Postgresql", "src\DdlExporter.Postgresql\DdlExporter.Postgresql.csproj", "{C889417A-8A4D-4F29-B70F-9824B7089BD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{6EBD0776-B6E0-4344-A734-B7458CF0F74E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EBD0776-B6E0-4344-A734-B7458CF0F74E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EBD0776-B6E0-4344-A734-B7458CF0F74E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C889417A-8A4D-4F29-B70F-9824B7089BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C889417A-8A4D-4F29-B70F-9824B7089BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C889417A-8A4D-4F29-B70F-9824B7089BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C889417A-8A4D-4F29-B70F-9824B7089BD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,9 @@
+{
+  "ServerHost": "localhost",
+  "Port": 5432,
+  "DatabaseName": "denemeDatabase",//database adi
+  "Username": "postgres",
+  "Password": "12345",//Þifre
+  "Schema": "public",
+  "PgDumpPath": "C:\\Program Files\\PostgreSQL\\15\\bin\\pg_dump.exe"
+}
